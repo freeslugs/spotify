@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		259CAF7619BBBC9200805948 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259CAF7519BBBC9200805948 /* FriendsViewController.swift */; };
+		25E6E18219BB8CE6003B4790 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E6E18119BB8CE6003B4790 /* SearchViewController.swift */; };
 		25EF921719BB75C9006F0A28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EF921619BB75C9006F0A28 /* AppDelegate.swift */; };
 		25EF921919BB75C9006F0A28 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EF921819BB75C9006F0A28 /* ViewController.swift */; };
 		25EF921C19BB75C9006F0A28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25EF921A19BB75C9006F0A28 /* Main.storyboard */; };
@@ -26,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		259CAF7519BBBC9200805948 /* FriendsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
+		25E6E18119BB8CE6003B4790 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchViewController.swift; path = ../SearchViewController.swift; sourceTree = "<group>"; };
 		25EF921119BB75C9006F0A28 /* SpotifyHackathon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpotifyHackathon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25EF921519BB75C9006F0A28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		25EF921619BB75C9006F0A28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +86,8 @@
 			children = (
 				25EF921619BB75C9006F0A28 /* AppDelegate.swift */,
 				25EF921819BB75C9006F0A28 /* ViewController.swift */,
+				25E6E18119BB8CE6003B4790 /* SearchViewController.swift */,
+				259CAF7519BBBC9200805948 /* FriendsViewController.swift */,
 				25EF921A19BB75C9006F0A28 /* Main.storyboard */,
 				25EF921D19BB75C9006F0A28 /* Images.xcassets */,
 				25EF921419BB75C9006F0A28 /* Supporting Files */,
@@ -215,7 +221,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				259CAF7619BBBC9200805948 /* FriendsViewController.swift in Sources */,
 				25EF921919BB75C9006F0A28 /* ViewController.swift in Sources */,
+				25E6E18219BB8CE6003B4790 /* SearchViewController.swift in Sources */,
 				25EF921719BB75C9006F0A28 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,7 +351,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "SpotifyHackathon/Bridge-Header.h";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -363,7 +371,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "SpotifyHackathon/Bridge-Header.h";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

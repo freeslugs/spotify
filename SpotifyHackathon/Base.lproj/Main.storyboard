@@ -46,6 +46,10 @@
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="ePY-9K-k8n" secondAttribute="centerY" id="7pE-tZ-NFc"/>
+                            <constraint firstAttribute="centerX" secondItem="ePY-9K-k8n" secondAttribute="centerX" id="eyK-KS-rcU"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="cO7-Io-lKn"/>
                     <connections>
