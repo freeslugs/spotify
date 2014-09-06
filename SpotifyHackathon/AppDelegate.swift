@@ -25,6 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         var wasHandled:Bool = FBAppCall.handleOpenURL(url, sourceApplication: sourceApplication)
         println("was handled?")
         println(wasHandled)
+        
         return wasHandled
     }
 

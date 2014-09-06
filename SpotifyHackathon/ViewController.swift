@@ -33,11 +33,9 @@ class ViewController: UIViewController, FBLoginViewDelegate {
         var userEmail = user.objectForKey("email") as String
         println("User Email: \(userEmail)")
         
-//        let fvc: AnyObject! = self.storyboard.instantiateViewControllerWithIdentifier("FriendsViewController")
-//        self.showViewController(fvc as UITableViewController, sender: fvc)
-    
     }
-    
+
+
     func loginViewShowingLoggedOutUser(loginView : FBLoginView!) {
         println(loginView)
         println("User Logged Out")
@@ -50,6 +48,15 @@ class ViewController: UIViewController, FBLoginViewDelegate {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+        println("hey we're intercepting")
+        if (segue.identifier == "GetStarted") {
+            println("get stared")
+            println(FBGraphUser)
+
+        }
     }
 }
 
