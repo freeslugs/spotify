@@ -14,6 +14,7 @@
 		25EF921C19BB75C9006F0A28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25EF921A19BB75C9006F0A28 /* Main.storyboard */; };
 		25EF921E19BB75C9006F0A28 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25EF921D19BB75C9006F0A28 /* Images.xcassets */; };
 		25EF922A19BB75C9006F0A28 /* SpotifyHackathonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EF922919BB75C9006F0A28 /* SpotifyHackathonTests.swift */; };
+		61F22C3919BBA640009F8546 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61F22C3819BBA640009F8546 /* FacebookSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,8 @@
 		25EF922319BB75C9006F0A28 /* SpotifyHackathonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpotifyHackathonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		25EF922819BB75C9006F0A28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		25EF922919BB75C9006F0A28 /* SpotifyHackathonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyHackathonTests.swift; sourceTree = "<group>"; };
+		61F22C3819BBA640009F8546 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
+		61F22C3A19BBA665009F8546 /* Bridge-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridge-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61F22C3919BBA640009F8546 /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +65,7 @@
 		25EF920819BB75C9006F0A28 = {
 			isa = PBXGroup;
 			children = (
+				61F22C3819BBA640009F8546 /* FacebookSDK.framework */,
 				25EF921319BB75C9006F0A28 /* SpotifyHackathon */,
 				25EF922619BB75C9006F0A28 /* SpotifyHackathonTests */,
 				25EF921219BB75C9006F0A28 /* Products */,
@@ -86,6 +91,7 @@
 				25EF921A19BB75C9006F0A28 /* Main.storyboard */,
 				25EF921D19BB75C9006F0A28 /* Images.xcassets */,
 				25EF921419BB75C9006F0A28 /* Supporting Files */,
+				61F22C3A19BBA665009F8546 /* Bridge-Header.h */,
 			);
 			path = SpotifyHackathon;
 			sourceTree = "<group>";
@@ -336,6 +342,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/mimoun/Documents/FacebookSDK,
+				);
 				INFOPLIST_FILE = SpotifyHackathon/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -352,6 +362,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/mimoun/Documents/FacebookSDK,
+				);
 				INFOPLIST_FILE = SpotifyHackathon/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
